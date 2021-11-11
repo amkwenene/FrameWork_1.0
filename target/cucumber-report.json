@@ -1,0 +1,69 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-11T06:58:08.698Z",
+        "line": 30,
+        "name": "Add a new pet with an auto generated name and status available - Confirm the new pet has been added",
+        "description": "",
+        "id": "technical-test;add-a-new-pet-with-an-auto-generated-name-and-status-available---confirm-the-new-pet-has-been-added;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15546000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I get a request \"https://petstore.swagger.io/v2/pet\"  \"new pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://petstore.swagger.io/v2/pet\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"new pet\"",
+                  "offset": 54
+                }
+              ],
+              "location": "com.example.ui.stepdefinitions.ApiStep.iGetARequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I add a new pet and status available \"new pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"new pet\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.example.ui.stepdefinitions.ApiStep.iAddANewPetAndStatusAvailable(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testing1"
+          }
+        ]
+      }
+    ],
+    "name": "Technical Test",
+    "description": "",
+    "id": "technical-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ApiTestExample.feature",
+    "tags": []
+  }
+]
